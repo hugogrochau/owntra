@@ -1,0 +1,37 @@
+#content {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: 'Helvetica', 'sans-serif';
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+}
+
+#canvas {
+    border: 1px black solid;
+    border-radius: 5px;
+    box-shadow: 0 0 10px black;
+    display: block;
+    margin: 20px auto 0 auto;
+
+    -webkit-transition: box-shadow 0.5s;
+    -moz-transition: box-shadow 0.5s;
+    -o-transition: box-shadow 0.5s;
+    -ms-transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s;
+}
+
+#canvas:hover {
+    box-shadow: 0 0 20px black;
+}
+
+#footer {
+    font-size: 8px;
+    font-family: 'sans-serif';
+    margin-top: 20px;
+    text-align: center;
+    text-shadow: 0 0 2px rgba(0,0,0,0.8);
+    width: 100%
+}
