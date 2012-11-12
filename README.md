@@ -12,10 +12,10 @@ At this point the game is in its planning stage
 * Hack-n-slash satisfying mechanics
 
 ##TODO list:
-1 Write a rendering engine
-2 Find good sprites
+1. Write a rendering engine
+2. Find good sprites
     * Make spritesheets
-3 Implement BOX2D Physics
+3. Implement BOX2D Physics
     * Collisions
 
 ##Join us
