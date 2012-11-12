@@ -1,12 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'sans-serif';
+}
+
 #content {
     width: 100%;
     text-align: center;
+}
+
+#content {
+    margin-top: 25px;
 }
 
 h1 {
     font-size: 50px;
     font-family: 'Helvetica', 'sans-serif';
     text-shadow: 1px 1px 4px rgba(0,0,0,0.8);
+
+    -webkit-transition: -webkit-transform 0.2s;
+    -moz-transition: -moz-transform 0.2s;
+    -o-transition: -o-transform 0.2s;
+    -ms-transition: -ms-transform 0.2s;
+    transition: transform 0.2s;
+}
+
+h1:hover {
+    -webkit-transform:rotate(3deg);
+    -moz-transform:rotate(3deg);
+    -o-transform:rotate(3deg);
+    -ms-transform:rotate(3deg);
+    transform:rotate(3deg);
 }
 
 #canvas {
