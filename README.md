@@ -15,7 +15,10 @@ At this point the game is in its planning stage
 1. Write a rendering engine
 2. Find good sprites
     * Make spritesheets
-3. Implement BOX2D Physics
+3. Write the initial node.js backend
+    * Use soy templates to render html files
+    * Stop using flask
+4. Implement BOX2D Physics
     * Collisions
 
 ##Join us
