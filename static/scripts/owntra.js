@@ -1,1 +1,0 @@
-function a(){this.name="Hugo";this.b=function(){return"My name is "+this.name}};var b=new function(){this.name="Owntra";this.a=new a;this.getName=function(){return this.name};this.c=function(){return this.a}};console.log("Game Started");console.log(b.getName());console.log(b.a.b());
