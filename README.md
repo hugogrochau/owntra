@@ -12,9 +12,11 @@ At this point the game is in its planning stage
 * Hack-n-slash satisfying mechanics
 
 ##TODO list:
-1. Write a rendering engine
-2. Find good sprites
+1. Find good sprites
     * Make spritesheets
+2. Write a rendering engine
+    * Splice spritesheets
+    * Generate animation
 3. Write the initial node.js backend
     * Use soy templates to render html files
     * Stop using flask
