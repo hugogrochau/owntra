@@ -1,17 +1,11 @@
-goog.provide("owntra.Game");
+goog.provide('owntra.Game');
 
-goog.require("owntra.Player");
-goog.require("goog.debug.Logger");
+goog.require('owntra.Player');
 
-var owntra.Game = function() {
-    this.logger = goog.debug.Logger.getLogger("game");		
-    this.name = "Owntra";
-    this.myPlayer = new owntra.Player("Hugo");
-    this.game = new owntra.Game();    
-    logger.info("Game started");
-    logger.info(game.getName());
-    logger.info(game.getPlayer().talk());
-    
+owntra.Game = function() {
+    this.name = 'Owntra';
+    this.myPlayer = new owntra.Player('Hugo');
+  
     this.getName = function() {
         return this.name;
     }    
@@ -21,4 +15,7 @@ var owntra.Game = function() {
     }
 }
 
-goog.exportSymbol('owntra.Game', owntra.Game);
+var game = new owntra.Game();
+console.log('Game Started');
+console.log(game.getName());
+console.log(game.getPlayer().talk());
