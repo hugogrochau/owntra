@@ -6,7 +6,7 @@ Owntra is a new 2D top-down game that aims to bring a fresh hack-n-slash MMORPG 
 At this point the game is in its planning stage
 
 ##Concepts and Proposed Features
-* KISS philosophy
+* KISS principle
 * Heavy social gameplay
 * Rich trading and market economy
 * Hack-n-slash satisfying mechanics
