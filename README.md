@@ -24,4 +24,4 @@ At this point the game is in its planning stage
     * Collisions
 
 ##Join us
-We are looking for willing developers and graphics (2D sprite) artists to join the team.
+We are looking for developers and graphic (2D sprites) artists to join the team.
