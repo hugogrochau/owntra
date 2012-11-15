@@ -3,20 +3,20 @@ goog.provide('owntra.Game');
 goog.require('owntra.Player');
 
 /**
- * Game object Constructor
- * @const 
+ * Game object
+ * @constructor
  */
 owntra.Game = function() {
-    name = 'Owntra';
-    myPlayer = new owntra.Player('Hugo');
+    this.name = 'Owntra';
+    this.myPlayer = new owntra.Player('Hugo');
 }
 
 owntra.Game.prototype.getName = function() {
-    return name;
+    return this.name;
 }
 
 owntra.Game.prototype.getPlayer = function() {
-    return myPlayer;
+    return this.myPlayer;
 }
 
 var game = new owntra.Game();
