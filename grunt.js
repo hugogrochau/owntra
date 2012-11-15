@@ -3,19 +3,19 @@ module.exports = function(grunt) {
     grunt.initConfig({
 
         closureBuilder: {
-            client_build: {
-                builder: 'build/closurebuilder.py',
+            client_production: {
+                builder: 'bin/closurebuilder.py',
                 root: 'src',
                 inputs: 'src/game.js',
                 output_file: 'static/scripts/owntra.min.js',
                 compile: true,
-                compiler: 'compiler.jar',
+                compiler: 'bin/compiler.jar',
                 compiler_options: {
                     compilation_level: 'ADVANCED_OPTIMIZATIONS'
                 }
             },
-            client_debug: {
-                builder: 'build/closurebuilder.py',
+            client_development: {
+                builder: 'bin/closurebuilder.py',
                 root: 'src',
                 inputs: 'src/game.js',
                 output_mode: 'script',
@@ -26,7 +26,8 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-closure-tools');
-    grunt.registerTask('default', 'debug build');
-    grunt.registerTask('build', 'closureBuilder:client_build');
-    grunt.registerTask('debug', 'closureBuilder:client_debug');
+    
+    grunt.registerTask('pro', 'closureBuilder:client_production');
+    grunt.registerTask('dev', 'closureBuilder:client_development');
+    grunt.registerTask('default', 'dev pro');
 }
