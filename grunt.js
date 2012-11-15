@@ -5,8 +5,8 @@ module.exports = function(grunt) {
         closureBuilder: {
             client_build: {
                 closureLibraryPath: '../closure-library',
-                root: ['src','../closure-library'],
-                inputs: 'src/owntra/game.js',
+                root: 'src',
+                inputs: 'src/game.js',
                 output_file: 'static/scripts/owntra.min.js',
                 compile: true,
                 compiler: '../closure-library/compiler.jar',
@@ -16,8 +16,8 @@ module.exports = function(grunt) {
             },
             client_debug: {
                 closureLibraryPath: '../closure-library',
-                root: ['src','../closure-library'],
-                inputs: 'src/owntra/game.js',
+                root: 'src',
+                inputs: 'src/game.js',
                 output_mode: 'script',
                 output_file: 'static/scripts/owntra.js'
             }
@@ -26,7 +26,7 @@ module.exports = function(grunt) {
     });
 
     grunt.loadNpmTasks('grunt-closure-tools');
-    grunt.registerTask('default', 'closureBuilder:client_debug');
+    grunt.registerTask('default', 'debug build');
     grunt.registerTask('build', 'closureBuilder:client_build');
-
+    grunt.registerTask('debug', 'closureBuilder:client_debug');
 }
