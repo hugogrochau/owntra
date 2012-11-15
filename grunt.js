@@ -4,8 +4,8 @@ module.exports = function(grunt) {
 
         closureBuilder: {
             client_production: {
-                builder: 'bin/closurebuilder.py',
-                root: 'src',
+                closureLibraryPath: 'closure-library',      
+                root: ['src', 'closure-library/closure/goog', 'closure-library/third_party/closure/goog'],
                 inputs: 'src/game.js',
                 output_file: 'static/scripts/owntra.min.js',
                 compile: true,
@@ -15,8 +15,8 @@ module.exports = function(grunt) {
                 }
             },
             client_development: {
-                builder: 'bin/closurebuilder.py',
-                root: 'src',
+                closureLibraryPath: 'closure-library',      
+                root: ['src', 'closure-library/closure/goog', 'closure-library/third_party/closure/goog'],
                 inputs: 'src/game.js',
                 output_mode: 'script',
                 output_file: 'static/scripts/owntra.js'
