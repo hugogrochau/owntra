@@ -4,18 +4,18 @@ module.exports = function(grunt) {
 
         closureBuilder: {
             client_build: {
-                closureLibraryPath: '../closure-library',
+                builder: 'build/closurebuilder.py',
                 root: 'src',
                 inputs: 'src/game.js',
                 output_file: 'static/scripts/owntra.min.js',
                 compile: true,
-                compiler: '../closure-library/compiler.jar',
+                compiler: 'compiler.jar',
                 compiler_options: {
                     compilation_level: 'ADVANCED_OPTIMIZATIONS'
                 }
             },
             client_debug: {
-                closureLibraryPath: '../closure-library',
+                builder: 'build/closurebuilder.py',
                 root: 'src',
                 inputs: 'src/game.js',
                 output_mode: 'script',
