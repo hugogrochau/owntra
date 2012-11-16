@@ -22,11 +22,9 @@ At this point the game is in its planning stage
 6. Extract it and move compiler.jar into the `bin` directory
 
 ###Building
-Build a development version with `grunt dev`
-
-Build a production version with `grunt pro`
-
-Build both with just `grunt`
+* Build a development version with `grunt dev`
+* Build a production version with `grunt pro`
+* Build both with just `grunt`
 
 ###Running
 Open `static/index.html`
