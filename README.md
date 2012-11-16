@@ -1,19 +1,19 @@
-#Owntra
+# Owntra
 
-##Description
+## Description
 Owntra is a new 2D top-down game that aims to bring a fresh hack-n-slash MMORPG experience to the browser
 
 At this point the game is in its planning stage
 
-##How to set up a build environment
+## Setting up a build environment
 
-###Dependencies
+### Dependencies
 * Node.js
     * Grunt
     * Grunt Closure Tools
 * Closure Compiler
 
-###Installing
+### Install
 1. Clone this repo
 2. Install Node.js with: `sudo apt-get install nodejs`
 3. Install Grunt globally with `sudo npm install -g grunt`
@@ -21,21 +21,21 @@ At this point the game is in its planning stage
 5. Download the latest version of the Closure Compiler [here](http://closure-compiler.googlecode.com/files/compiler-latest.zip).
 6. Extract it and move compiler.jar into the `bin` directory
 
-###Building
+### Build
 * Build a development version with `grunt dev`
 * Build a production version with `grunt pro`
 * Build both with just `grunt`
 
-###Running
+### Run
 Open `static/index.html`
 
-##Concepts and Proposed Features
+## Concepts and Proposed Features
 * KISS principle
 * Heavy social gameplay
 * Rich trading and market economy
 * Hack-n-slash satisfying mechanics
 
-##TODO list:
+## TODO:
 1. Find good sprites
     * Make spritesheets
 2. Write a rendering engine
@@ -47,5 +47,5 @@ Open `static/index.html`
 4. Implement BOX2D Physics
     * Collisions
 
-##Join us
+## Join us
 We are looking for developers and graphic (2D sprites) artists to join the team.
