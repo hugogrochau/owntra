@@ -21,13 +21,26 @@ module.exports = function(grunt) {
                 output_mode: 'script',
                 output_file: 'static/scripts/owntra.js'
             }
+        },
+
+        stylus: {
+            compile: {
+                options: {
+                    compress: true
+                },
+                files: {
+                    'static/styles/main.css': 'styles/*.styl'     
+                }
+            }
         }
         
     });
 
     grunt.loadNpmTasks('grunt-closure-tools');
+    grunt.loadNpmTasks('grunt-contrib-stylus');
     
     grunt.registerTask('pro', 'closureBuilder:client_production');
     grunt.registerTask('dev', 'closureBuilder:client_development');
+    grunt.registerTask('styles', 'stylus:compile');
     grunt.registerTask('default', 'dev pro');
 }
