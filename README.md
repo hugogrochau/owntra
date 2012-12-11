@@ -21,6 +21,7 @@ At this point the game is in its planning stage
 4. Install Grunt Closure Tools and Grunt Contrib Stylus with `npm install grunt-closure-tools grunt-contrib-stylus`
 5. Download the latest version of the Closure Compiler [here](http://closure-compiler.googlecode.com/files/compiler-latest.zip).
 6. Extract it and move compiler.jar into the `bin` directory
+7. Initiate and Update the Closure Library submodule with `git submodule init && git submodule update`
 
 ### Build
 * Build a development version with `grunt dev`
