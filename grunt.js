@@ -42,5 +42,5 @@ module.exports = function(grunt) {
     grunt.registerTask('pro', 'closureBuilder:client_production');
     grunt.registerTask('dev', 'closureBuilder:client_development');
     grunt.registerTask('styles', 'stylus:compile');
-    grunt.registerTask('default', 'dev pro');
+    grunt.registerTask('default', 'styles dev pro');
 }
