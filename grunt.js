@@ -29,7 +29,7 @@ module.exports = function(grunt) {
                     compress: true
                 },
                 files: {
-                    'static/styles/main.css': 'styles/*.styl'     
+                    'static/styles/main.css': 'styles/main.styl'
                 }
             }
         }
