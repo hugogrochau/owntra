@@ -9,28 +9,27 @@ goog.require("goog.json")
  * @param {Integer} id the Sprite Id
  */
 owntra.Sprite = function(id) {
-        this.id = id;
-        this.image;
-        this.width;
-        this.height;
-        this.position = {
-            x: 0,
-            y: 0
-        };
-    },
-}
+    this.id = id;
+    this.image;
+    this.width;
+    this.height;
+    this.position = {
+        x: 0,
+        y: 0
+    };
+};
 
 /**
  * Loads the image and the data about the sprite from its JSON file
  */
 owntra.Sprite.prototype.load = function() {
-        this.image = new Image();
-        this.image.src = owntra.staticURL + 'sprites/' + this.id + '.png';
-        var data = goog.JSON.parse(); //TODO: load and/or cache JSON properties files
-        this.width = data.width;
-        this.height = data.height;
-        if (this.animations != 'undefined')
-            this.loadAnimations(data.animations);
+    this.image = new Image();
+    this.image.src = owntra.staticURL + 'sprites/' + this.id + '.png';
+    var data = goog.JSON.parse(null); //TODO: load and/or cache JSON properties files
+    this.width = data.width;
+    this.height = data.height;
+    if (this.animations != 'undefined')
+        this.loadAnimations(data.animations);
 };
 
 /**
@@ -43,7 +42,7 @@ owntra.Sprite.prototype.loadAnimations = function(data) {
                               new Animation(animation.row, 
                                             animation.frames, 
                                             animation.speed, 
-                                            animation.loop != 'undefined' ? animation.loop : false]); // loop defaults to false
+                                            animation.loop != 'undefined' ? animation.loop : false)]); // loop defaults to false
     }
 };
 

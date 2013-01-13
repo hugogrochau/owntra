@@ -3,10 +3,10 @@ goog.provide("owntra.Animation");
 /**
  * Animation class
  * @constructor
- * @param {Integer} row    row of the animation frames
- * @param {Integer} frames number of frames
- * @param {Integer} speed  speed of the animation
- * @param {Boolean} loop   if the animation should loop 
+ * @param {Integer} row    Row of the animation frames
+ * @param {Integer} frames Number of frames
+ * @param {Integer} speed  Speed of the animation
+ * @param {Boolean} loop   If the animation should loop 
  */
 owntra.Animation = function(row, frames, speed, loop) {
     this.row = row;
@@ -15,7 +15,7 @@ owntra.Animation = function(row, frames, speed, loop) {
     this.loop = loop;
     this.currentFrame = 0;
     this.lastTime = 0;
-    this.running = true;
+    this.running = false;
 };
 
 /**
@@ -37,19 +37,19 @@ owntra.Animation.prototype.tick = function() {
 
 /**
  * Stops the animation
- * @return {Boolean} false if already stopped, true otherwise
+ * @return {Boolean} False if already stopped, true otherwise
  */
 owntra.Animation.prototype.stop = function() {
-    if (this.running)
+    if (this.running) {
         this.running = false;
-        return true
-    else
+        return true;
+    } else
         return false; // already stopped
 };
 
 /**
  * Runs the animation
- * @return {Boolean} false if already running, true otherwise
+ * @return {Boolean} False if already running, true otherwise
  */
 owntra.Animation.prototype.run = function() {
     if (!this.running)

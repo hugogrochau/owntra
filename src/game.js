@@ -2,6 +2,7 @@ goog.provide('owntra.Game');
 
 goog.require('owntra.Player');
 goog.require("goog.json")
+goog.require('owntra.Sprite')
 
 /**
  * Game Class
