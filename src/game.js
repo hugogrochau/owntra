@@ -21,6 +21,7 @@ owntra.Game.prototype.getPlayer = function() {
 };
 
 var game = new owntra.Game();
+owntra.staticURL = ""; //TODO: Make this a constant
 console.log('Game Started');
 console.log(game.getName());
 console.log(game.getPlayer().talk());
