@@ -3,9 +3,9 @@ goog.provide("owntra.Animation");
 /**
  * Animation class
  * @constructor
- * @param {Integer} row    the row of the animation frames
- * @param {Integer} frames the number of frames
- * @param {Integer} speed  the speed of the animation
+ * @param {Integer} row    row of the animation frames
+ * @param {Integer} frames number of frames
+ * @param {Integer} speed  speed of the animation
  * @param {Boolean} loop   if the animation should loop 
  */
 owntra.Animation = function(row, frames, speed, loop) {
@@ -35,6 +35,25 @@ owntra.Animation.prototype.tick = function() {
     }
 };
 
+/**
+ * Stops the animation
+ * @return {Boolean} false if already stopped, true otherwise
+ */
 owntra.Animation.prototype.stop = function() {
-    this.running = false;
+    if (this.running)
+        this.running = false;
+        return true
+    else
+        return false; // already stopped
+};
+
+/**
+ * Runs the animation
+ * @return {Boolean} false if already running, true otherwise
+ */
+owntra.Animation.prototype.run = function() {
+    if (!this.running)
+        return this.running = true;
+    else
+        return false; // already running
 };
