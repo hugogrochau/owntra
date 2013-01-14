@@ -1,4 +1,4 @@
-goog.provide("owntra.Animation");
+goog.provide('owntra.Animation');
 
 /**
  * Animation class

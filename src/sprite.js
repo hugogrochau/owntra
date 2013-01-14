@@ -1,22 +1,20 @@
-goog.provide("owntra.Sprite");
+goog.provide('owntra.Sprite');
 
-goog.require("owntra.Animation");
-goog.require("goog.json")
+goog.require('owntra.Animation');
+goog.require('goog.json');
 
 /**
- * @constructor
  * Initializes the Sprite class
+ * @constructor
  * @param {Integer} id the Sprite Id
  */
 owntra.Sprite = function(id) {
     this.id = id;
-    this.image;
-    this.width;
-    this.height;
     this.position = {
         x: 0,
         y: 0
     };
+    this.load();
 };
 
 /**
@@ -25,24 +23,24 @@ owntra.Sprite = function(id) {
 owntra.Sprite.prototype.load = function() {
     this.image = new Image();
     this.image.src = owntra.staticURL + 'sprites/' + this.id + '.png';
-    var data = goog.JSON.parse(null); //TODO: load and/or cache JSON properties files
-    this.width = data.width;
-    this.height = data.height;
-    if (this.animations != 'undefined')
-        this.loadAnimations(data.animations);
+    var spriteInfo = goog.JSON.parse(null); //TODO: load and/or cache JSON properties files
+    this.width = spriteInfo.width;
+    this.height = spriteInfo.height;
+    if (spriteInfo.animations)
+        this.loadAnimations(spriteInfo.animations);
 };
 
 /**
  * Loads and caches all the animation information from the JSON
- * @param {Array<Object>} data Information of each animation
+ * @param {Array<Object>} animationsInfo Information of each animation
  */
-owntra.Sprite.prototype.loadAnimations = function(data) {
-    for(var animation in data) {
+owntra.Sprite.prototype.loadAnimations = function(animationsInfo) {
+    for(var animation in animationsInfo) {
         this.animations.push([animation.name, 
                               new Animation(animation.row, 
                                             animation.frames, 
                                             animation.speed, 
-                                            animation.loop != 'undefined' ? animation.loop : false)]); // loop defaults to false
+                                            animation.loop ? animation.loop : false)]); // loop defaults to false
     }
 };
 
@@ -62,18 +60,19 @@ owntra.Sprite.prototype.draw = function(ctx) {
     // |    |            | |
     // ------------------- v
     
-    var animation = this.currentAnimation;
-    if (animation !== 'undefined')
+    if (this.currentAnimation) {
+        var animation = this.animations[this.currentAnimation];
+        animation.tick();
         ctx.drawImage(this.image,
-                      this.animations[animation].currentFrame * this.width,
-                      this.animations[animation].row * this.height,
+                      animation.currentFrame * this.width,
+                      animation.row * this.height,
                       this.width,
                       this.height,
                       this.position.x,
                       this.position.y,
                       this.width,
                       this.height);
-    else
+    } else
         ctx.drawImage(this.image,
                       0,
                       0,
