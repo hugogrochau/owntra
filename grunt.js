@@ -11,7 +11,8 @@ module.exports = function(grunt) {
                 compile: true,
                 compiler: 'bin/compiler.jar',
                 compiler_options: {
-                    compilation_level: 'ADVANCED_OPTIMIZATIONS'
+                    compilation_level: 'ADVANCED_OPTIMIZATIONS',
+                    process_closure_primitives: true
                 }
             },
             client_development: {
