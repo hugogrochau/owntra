@@ -10,37 +10,38 @@ goog.require('goog.json');
  */
 owntra.Sprite = function(id) {
     this.id = id;
-    this.position = {
-        x: 0,
-        y: 0
-    };
-    this.load();
+    this.x = 0;
+    this.y = 0;
+    this.width = 32;
+    this.height = 32;
+    this.load_();
 };
 
 /**
  * Loads the image and the data about the sprite from its JSON file
+ * @private
  */
-owntra.Sprite.prototype.load = function() {
+owntra.Sprite.prototype.load_ = function() {
     this.image = new Image();
     this.image.src = owntra.staticURL + 'sprites/' + this.id + '.png';
     var spriteInfo = goog.JSON.unsafeParse(null); //TODO: load and/or cache JSON properties files
     this.width = spriteInfo.width;
     this.height = spriteInfo.height;
     if (spriteInfo.animations)
-        this.loadAnimations(spriteInfo.animations);
+        this.loadAnimations_(spriteInfo.animations);
 };
 
 /**
- * Loads and caches all the animation information from the JSON
- * @param {Array<Object>} animationsInfo Information of each animation
+ * Loads and caches all the animation information from a Map
+ * @param {Map} animationsInfo Information of each animation
+ * @private
  */
-owntra.Sprite.prototype.loadAnimations = function(animationsInfo) {
-    for(var animation in animationsInfo) {
-        this.animations.push([animation.name, 
-                              new Animation(animation.row, 
-                                            animation.frames, 
-                                            animation.speed, 
-                                            animation.loop ? animation.loop : false)]); // loop defaults to false
+owntra.Sprite.prototype.loadAnimations_ = function(animationsInfo) {
+    for(animation in animationsInfo) {
+        this.animations[animation.name] = new Animation(animation.row, 
+                                                        animation.frames, 
+                                                        animation.speed, 
+                                                        animation.hasOwnProperty('loop')); // loop defaults to false
     }
 };
 
@@ -61,35 +62,44 @@ owntra.Sprite.prototype.draw = function(ctx) {
     // ------------------- v
     
     if (this.currentAnimation) {
-        var animation = this.animations[this.currentAnimation];
-        animation.tick();
+        var animation = this.getCurrentAnimation_();
+        animation.update();
         ctx.drawImage(this.image,
-                      animation.currentFrame * this.width,
-                      animation.row * this.height,
-                      this.width,
-                      this.height,
-                      this.position.x,
-                      this.position.y,
-                      this.width,
-                      this.height);
+                      animation.currentFrame * this.width, //sX
+                      animation.row * this.height, //sY
+                      this.width, //sWidth
+                      this.height, //sHeight
+                      this.x, //dX
+                      this.y, //dY
+                      this.width, //dWidth
+                      this.height); //dHeight
     } else
         ctx.drawImage(this.image,
-                      0,
-                      0,
-                      this.width,
-                      this.height,
-                      this.position.x,
-                      this.position.y,
-                      this.width,
-                      this.height); 
+                      0,0, //sX,sY (top left)
+                      this.width, //sWidth
+                      this.height, //sHeight
+                      this.x, //dX
+                      this.y, //dY
+                      this.width, //dWidth
+                      this.height); //dHeight
+};
+
+/**
+ * Gets the active animation object
+ * @return {goog.Animation} the current animation object
+ * @private
+ */
+owntra.Sprite.prototype.getCurrentAnimation_ = function() {
+    return this.animations[this.currentAnimation];
 };
 
 /**
  * Changes the current animation
  * @param {String} name the name of the animation
  */
-owntra.Sprite.prototype.setAnimation = function(name) {
+owntra.Sprite.prototype.changeAnimation = function(name) {
     this.currentAnimation = name;
+    this.getCurrentAnimation_.run();
 };
 
 /**
@@ -98,6 +108,6 @@ owntra.Sprite.prototype.setAnimation = function(name) {
  * @param {Integer} y
  */
 owntra.Sprite.prototype.setPosition = function(x, y) {
-    this.position.x = x;
-    this.position.y = y;
+    this.x = x;
+    this.y = y;
 };
