@@ -21,7 +21,7 @@ owntra.Animation = function(row, frames, speed, loop) {
 /**
  * Runs every time the frame needs to be updated
  */
-owntra.Animation.prototype.tick = function() {
+owntra.Animation.prototype.update = function() {
     var d = new Date();
     if (d.getMilliseconds - this.lastTime >= 1000 / this.speed && this.running) { // time difference >= delay between frames
         this.currentFrame++;
@@ -39,7 +39,7 @@ owntra.Animation.prototype.tick = function() {
  * Stops the animation
  * @return {Boolean} False if already stopped, true otherwise
  */
-owntra.Animation.prototype.stop = function() {
+owntra.Animation.prototype.pause = function() {
     if (this.running) {
         this.running = false;
         return true;
