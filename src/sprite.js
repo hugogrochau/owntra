@@ -23,7 +23,7 @@ owntra.Sprite = function(id) {
 owntra.Sprite.prototype.load = function() {
     this.image = new Image();
     this.image.src = owntra.staticURL + 'sprites/' + this.id + '.png';
-    var spriteInfo = goog.JSON.parse(null); //TODO: load and/or cache JSON properties files
+    var spriteInfo = goog.JSON.unsafeParse(null); //TODO: load and/or cache JSON properties files
     this.width = spriteInfo.width;
     this.height = spriteInfo.height;
     if (spriteInfo.animations)
