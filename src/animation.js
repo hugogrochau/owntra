@@ -37,7 +37,7 @@ owntra.Animation.prototype.update = function() {
 
 /**
  * Stops the animation
- * @return {Boolean} False if already stopped, true otherwise
+ * @return {Boolean} false if already stopped, true otherwise
  */
 owntra.Animation.prototype.pause = function() {
     if (this.running) {
