@@ -12,7 +12,8 @@ module.exports = function(grunt) {
                 compiler: 'bin/compiler.jar',
                 compiler_options: {
                     compilation_level: 'ADVANCED_OPTIMIZATIONS',
-                    process_closure_primitives: true
+                    jscomp_warning: 'visibility', // Give warnings when accessing private or protected members
+                    process_closure_primitives: true // (goog.provide, goog.import, etc)
                 }
             },
             client_development: {
