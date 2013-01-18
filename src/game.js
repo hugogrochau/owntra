@@ -1,8 +1,8 @@
 goog.provide('owntra.Game');
 
 goog.require('owntra.Player');
-goog.require("goog.json")
-goog.require('owntra.Sprite')
+goog.require('goog.json');
+goog.require('owntra.Sprite');
 
 /**
  * Game Class
@@ -22,7 +22,7 @@ owntra.Game.prototype.getPlayer = function() {
 };
 
 var game = new owntra.Game();
-owntra.staticURL = ""; //TODO: Make this a constant
+/* @const */ owntra.staticURL = "";
 console.log('Game Started');
 console.log(game.getName());
 console.log(game.getPlayer().talk());

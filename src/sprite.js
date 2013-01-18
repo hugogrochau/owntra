@@ -37,11 +37,11 @@ owntra.Sprite.prototype.load_ = function() {
  * @private
  */
 owntra.Sprite.prototype.loadAnimations_ = function(animationsInfo) {
-    for(animation in animationsInfo) {
-        this.animations[animation.name] = new Animation(animation.row, 
-                                                        animation.frames, 
-                                                        animation.speed, 
-                                                        animation.hasOwnProperty('loop')); // loop defaults to false
+    for(var animationInfo in animationsInfo) {
+        this.animations[animationInfo.name] = new Animation(animationInfo.row,
+                                                            animationInfo.frames,
+                                                            animationInfo.speed,
+                                                            animationInfo.hasOwnProperty('loop')); // loop defaults to false
     }
 };
 

@@ -6,7 +6,7 @@ goog.provide('owntra.Animation');
  * @param {Integer} row    Row of the animation frames
  * @param {Integer} frames Number of frames
  * @param {Integer} speed  Speed of the animation
- * @param {Boolean} loop   If the animation should loop 
+ * @param {Boolean} loop   If the animation should loop
  */
 owntra.Animation = function(row, frames, speed, loop) {
     this.row = row;
