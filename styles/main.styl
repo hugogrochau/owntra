@@ -2,33 +2,42 @@
 
 global-reset()
 
+// variables
+black = #38424e
+red = #fa514c
+white = #ecefe6
+green = #496b4a
+brown = #301310
+
+body
+  background-color: white
+  color: black
+  font: 12px 'Open Sans', 'Helvetica', 'Arial' 'sans-serif'
+
 #content
   width: 100%
   text-align: center
   margin-top: 25px
 
-h1
+header, h1
   font-size: 50px
-  font-family: 'Helvetica', 'sans-serif'
-  text-shadow: 1px 1px 4px rgba(0,0,0,0.8)
-  transition transform 0.2s
-  &:hover
-    transform: rotate(3deg)
+  text-shadow: 1px 1px 4px black
+  transition: transform 0.2s
+  // &:hover
+  //   transform: rotate(3deg)
 
-#canvas
-  border: 1px #000 solid
+canvas#owntra
+  border: 1px black solid
   border-radius: 5px
-  box-shadow: 0 0 10px #000
+  box-shadow: 0 0 6px black
   display: block
   margin: 20px auto 0 auto
-  transition: box-shadow 0.5s
+  transition: box-shadow 0.2s
   &:hover
-    box-shadow: 0 0 20px #000
+    box-shadow: 0 0 20px black
 
-#footer
-  font-size: 8px
-  font-family: 'sans-serif'
+footer
   margin-top: 20px
   text-align: center
-  text-shadow: 0 0 2px rgba(0,0,0,0.8)
+  text-shadow: 0 0 1px black
   width: 100%
