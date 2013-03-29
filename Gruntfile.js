@@ -4,7 +4,7 @@ module.exports = function(grunt) {
 
         closureBuilder: {
             client_production: {
-                closureLibraryPath: 'closure-library',      
+                closureLibraryPath: 'closure-library',
                 root: ['src', 'closure-library/closure/goog', 'closure-library/third_party/closure/goog'],
                 inputs: 'src/game.js',
                 output_file: 'static/scripts/owntra.min.js',
@@ -17,7 +17,7 @@ module.exports = function(grunt) {
                 }
             },
             client_development: {
-                closureLibraryPath: 'closure-library',      
+                closureLibraryPath: 'closure-library',
                 root: ['src', 'closure-library/closure/goog', 'closure-library/third_party/closure/goog'],
                 inputs: 'src/game.js',
                 output_mode: 'script',
@@ -35,12 +35,11 @@ module.exports = function(grunt) {
                 }
             }
         }
-        
     });
 
     grunt.loadNpmTasks('grunt-closure-tools');
     grunt.loadNpmTasks('grunt-contrib-stylus');
-    
+
     grunt.registerTask('pro', 'closureBuilder:client_production');
     grunt.registerTask('dev', 'closureBuilder:client_development');
     grunt.registerTask('styles', 'stylus:compile');
