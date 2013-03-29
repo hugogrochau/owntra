@@ -9,9 +9,9 @@ At this point the game is in its planning stage
 
 ### Dependencies
 * Node.js
-  * Grunt
-  * Grunt Closure Tools
-  * Grunt Contrib Stylus
+    * Grunt
+    * Grunt Closure Tools
+    * Grunt Contrib Stylus
 * Closure Compiler
 
 ### Install
@@ -40,15 +40,15 @@ Open `static/index.html`
 
 ## TODO:
 1. Find good sprites
-  * Make spritesheets
+    * Make spritesheets
 2. Write a rendering engine
-  * Splice spritesheets
-  * Generate animation
+    * Splice spritesheets
+    * Generate animation
 3. Write the initial node.js backend
-  * Use soy templates to render html files
-  * Stop using flask
+    * Use soy templates to render html files
+    * Stop using flask
 4. Implement BOX2D Physics
-  * Collisions
+    * Collisions
 
 ## Join us
 We are looking for developers and graphic (2D sprites) artists to join the team.
