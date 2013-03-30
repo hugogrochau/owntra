@@ -6,7 +6,12 @@ module.exports = function(grunt) {
       options: {
         closureLibraryPath: 'closure-library',
         compilerFile: 'bin/compiler.jar',
-        namespaces: 'owntra.Game'
+        namespaces: 'owntra.Game',
+        compilerOpts: {
+          compilation_level: 'ADVANCED_OPTIMIZATIONS',
+          jscomp_warning: 'visibility',
+          process_closure_primitives: true
+        }
       },
       client_development: {
         src: ['src', 'closure-library/closure/goog', 'closure-library/third_party/closure/goog'],
@@ -14,7 +19,7 @@ module.exports = function(grunt) {
       },
       client_production: {
         options: {
-          compile: true,
+          compile: true
         },
         src: ['src', 'closure-library/closure/goog', 'closure-library/third_party/closure/goog'],
         dest: 'static/scripts/owntra-min.js'
