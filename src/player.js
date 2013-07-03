@@ -1,9 +1,3 @@
-goog.provide("owntra.Player");
-
-/**
- * Player Class
- * @constructor
- */
 owntra.Player = function(name) {
     this.name = name;
 };

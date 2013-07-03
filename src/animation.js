@@ -1,5 +1,3 @@
-goog.provide('owntra.Animation');
-
 /**
  * Animation class
  * @constructor

@@ -1,9 +1,3 @@
-goog.provide('owntra.Game');
-
-goog.require('owntra.Player');
-goog.require('goog.json');
-goog.require('owntra.Sprite');
-
 /**
  * Game Class
  * @constructor
@@ -26,4 +20,4 @@ var game = new owntra.Game();
 console.log('Game Started');
 console.log(game.getName());
 console.log(game.getPlayer().talk());
-console.log(goog.json.serialize({test:"something"}));
+console.log(json.serialize({test:"something"}));

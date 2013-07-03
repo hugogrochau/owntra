@@ -1,8 +1,3 @@
-goog.provide('owntra.Sprite');
-
-goog.require('owntra.Animation');
-goog.require('goog.json');
-
 /**
  * Initializes the Sprite class
  * @constructor
@@ -24,7 +19,7 @@ owntra.Sprite = function(id) {
 owntra.Sprite.prototype.load_ = function() {
     this.image = new Image();
     this.image.src = owntra.staticURL + 'sprites/' + this.id + '.png';
-    var spriteInfo = goog.JSON.unsafeParse(null); //TODO: load and/or cache JSON properties files
+    var spriteInfo = json.parse(null); //TODO: load and/or cache JSON properties files
     this.width = spriteInfo.width;
     this.height = spriteInfo.height;
     if (spriteInfo.animations)
@@ -60,7 +55,7 @@ owntra.Sprite.prototype.draw = function(ctx) {
     // |    |   Image    | |sHeight
     // |    |            | |
     // ------------------- v
-    
+
     if (this.currentAnimation) {
         var animation = this.getCurrentAnimation_();
         animation.update();

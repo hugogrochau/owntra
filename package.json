@@ -2,16 +2,7 @@
   "name": "owntra",
   "version": "0.0.1",
   "description": "Owntra is a new 2D top-down game that aims to bring a fresh hack-n-slash MMORPG experience to the browser",
-  "main": "Gruntfile.js",
-  "dependencies": {
-    "grunt": "~0.4.1",
-    "grunt-contrib-stylus": "~0.5.0",
-    "grunt-closure-tools": "~0.8.0"
-  },
-  "devDependencies": {},
-  "scripts": {
-    "test": "grunt dev && xdg-open static/index.html"
-  },
+  "dependencies": {},
   "repository": {
     "type": "git",
     "url": "git@bitbucket.org:voiddev/owntra.git"
