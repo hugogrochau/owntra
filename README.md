@@ -9,26 +9,11 @@ At this point the game is in its planning stage
 
 ### Dependencies
 * Node.js
-    * Grunt
-    * Grunt Closure Tools
-    * Grunt Contrib Stylus
-* Closure Compiler
 
 ### Install
 1. Clone this repo
 2. Install Node.js with: `sudo apt-get install nodejs`
 3. Install the Node.js dependencies with: `npm install`
-4. Install the Grunt-CLI tool globally with `sudo npm install -g
-grunt-cli`
-5. Download the latest version of the Closure Compiler [here](http://closure-compiler.googlecode.com/files/compiler-latest.zip).
-6. Extract it and move compiler.jar into the `bin` directory
-7. Initiate and Update the Closure Library submodule with `git submodule init && git submodule update`
-
-### Build
-* Build a development version with `grunt dev`
-* Build a production version with `grunt pro`
-* Compile .stylus files into CSS with `grunt styles`
-* Build everything with just `grunt`
 
 ### Run
 Open `static/index.html`
