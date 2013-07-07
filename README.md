@@ -9,11 +9,14 @@ At this point the game is in its planning stage
 
 ### Dependencies
 * Node.js
+* Websockets
+* node-mysql
 
 ### Install
 1. Clone this repo
 2. Install Node.js with: `sudo apt-get install nodejs`
 3. Install the Node.js dependencies with: `npm install`
+4. Install Websockets and node-myself with: `npm install websockets` and `npm install node-mysql`
 
 ### Run
 Open `static/index.html`
