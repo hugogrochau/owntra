@@ -14,4 +14,4 @@ owntra.map.addPlayer(owntra.localPlayer);
 
 owntra.InputHandler.init();
 
-window.setInterval(owntra.Renderer.render, 1000/6);
+window.setInterval(owntra.Renderer.render, 1000/60);

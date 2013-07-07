@@ -6,10 +6,10 @@ owntra.InputHandler.keys.length = 256;
 owntra.InputHandler.init = function(event) {
   document.addEventListener("keydown", function(event) {
     owntra.InputHandler.keys[event.keyCode] = true;
-  },          true);
+  });
   document.addEventListener("keyup", function(event) {
     owntra.InputHandler.keys[event.keyCode] = false;
-  }, true);
+  });
 };
 
 owntra.InputHandler.handleKeyboard = function() {
