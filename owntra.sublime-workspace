@@ -1,0 +1,849 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"emoji",
+				"emoji_array"
+			],
+			[
+				"emo",
+				"emoji_array"
+			],
+			[
+				"li",
+				"Lucida"
+			],
+			[
+				"ke",
+				"keyCode"
+			],
+			[
+				"get",
+				"getBindingParent  (function)"
+			],
+			[
+				"doc",
+				"document"
+			],
+			[
+				"op",
+				"opacity"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"font",
+				"font-weight"
+			],
+			[
+				"text",
+				"text-decoration"
+			],
+			[
+				"list",
+				"list-style"
+			],
+			[
+				"p",
+				"popup"
+			],
+			[
+				"set",
+				"setTimeout  (function)"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"char",
+				"charCodeAt"
+			],
+			[
+				"inl",
+				"inline-block"
+			],
+			[
+				"font-si",
+				"font-size:   (property)"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "src/client/animation.js",
+			"settings":
+			{
+				"buffer_size": 1571,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 185.0,
+		"selected_items":
+		[
+			[
+				"form",
+				"Format: Javascript"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"reinde",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"intal",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"lint",
+				"SublimeLinter: Lint Current File"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remove ",
+				"Package Control: Remove Package"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"list p",
+				"Package Control: List Packages"
+			],
+			[
+				"format",
+				"Format: Javascript"
+			],
+			[
+				"jva",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"syn c",
+				"Set Syntax: C"
+			],
+			[
+				"riende",
+				"Preferences: SublimeLinter Settings – Default"
+			],
+			[
+				"ej",
+				"Set Syntax: EJS (<% and %>)"
+			],
+			[
+				"ejs",
+				"Set Syntax: EJS (<% and %>)"
+			],
+			[
+				"upt",
+				"Gist: Update File"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"reide",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"C++",
+				"Set Syntax: C++"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"",
+				"Bookmarks: Select Next"
+			],
+			[
+				"rem",
+				"Package Control: Remove Package"
+			],
+			[
+				"we",
+				"Web Inspector"
+			],
+			[
+				"for",
+				"Format: Javascript"
+			],
+			[
+				"tidy",
+				"TidyHTML"
+			],
+			[
+				"html",
+				"TidyHTML"
+			],
+			[
+				"IE",
+				"Snippet: IE Conditional Comment: <IE9"
+			],
+			[
+				"quick",
+				"QuickThemes: next"
+			],
+			[
+				"inspect",
+				"Web Inspector"
+			],
+			[
+				"inspector",
+				"Web Inspector"
+			],
+			[
+				"remove pac",
+				"Package Control: Remove Package"
+			],
+			[
+				"syntax: C++",
+				"Set Syntax: C++"
+			],
+			[
+				"remov",
+				"Package Control: Remove Package"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"open",
+				"File: Open In Browser - Testing Server"
+			],
+			[
+				"web in",
+				"Web Inspector"
+			],
+			[
+				"web",
+				"Web Inspector"
+			],
+			[
+				"forma",
+				"Format: Javascript"
+			],
+			[
+				"brows",
+				"View In Browser"
+			],
+			[
+				"brow",
+				"View In Browser"
+			],
+			[
+				"browser",
+				"View In Browser"
+			],
+			[
+				"syn html",
+				"Set Syntax: HTML"
+			],
+			[
+				"projec",
+				"Project: Add Folder"
+			],
+			[
+				"Html",
+				"Set Syntax: HTML"
+			],
+			[
+				"synta htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"convert to",
+				"Indentation: Convert to Spaces"
+			],
+			[
+				"inta",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"LIST",
+				"Package Control: List Packages"
+			],
+			[
+				"env",
+				"Snippet: #!/usr/bin/env"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"pyth",
+				"TextFormatting - Debug Python"
+			],
+			[
+				"pyth	",
+				"Set Syntax: Python"
+			],
+			[
+				"wrap",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"synta cs",
+				"Set Syntax: CSS"
+			],
+			[
+				"emmet",
+				"Emmet: Wrap With Abbreviation"
+			],
+			[
+				"lorem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"s s html",
+				"Set Syntax: HTML"
+			],
+			[
+				"previ",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"lore	",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"s s mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"preference",
+				"Preferences: Settings - User"
+			],
+			[
+				"settings",
+				"Preferences: Settings - Default"
+			],
+			[
+				"preview",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"preview in ",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"preview in",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"mark",
+				"Markdown Preview: preview in Browser"
+			],
+			[
+				"lrem",
+				"Snippet: Lorem ipsum"
+			],
+			[
+				"pytho",
+				"Set Syntax: Python"
+			],
+			[
+				"pythn",
+				"Set Syntax: Python"
+			]
+		],
+		"width": 450.0
+	},
+	"console":
+	{
+		"height": 141.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/home/hugo/programming/projects/owntra/owntra.sublime-project",
+		"/home/hugo/servercontrol/index.php",
+		"/home/hugo/isitchristmas-iconspam.js",
+		"/home/hugo/isitchristmas-moveMyFlag.js",
+		"/home/hugo/programming/projects/owntra/src/client/owntra.js",
+		"/home/hugo/all-weve-heard-from-a-bunch-of-you-who-are",
+		"/home/hugo/downloads/rel (1).txt",
+		"/home/hugo/downloads/rel.txt",
+		"/home/hugo/programming/projects/owntra/src/client/renderer.js",
+		"/home/hugo/programming/projects/owntra/src/client/packethandler.js",
+		"/home/hugo/others/dota2-hereos-to-play.txt",
+		"/home/hugo/programming/projects/owntra/src/client/inputhandler.js",
+		"/home/hugo/steam.sh",
+		"/home/hugo/programming/projects/owntra/src/client/player.js",
+		"/home/hugo/programming/projects/owntra/src/client/spritesheet.js",
+		"/home/hugo/programming/projects/owntra/static/owntra.sublime-workspace",
+		"/home/hugo/programming/projects/owntra/static/scripts/index.js",
+		"/home/hugo/programming/projects/owntra/static/styles/main.css",
+		"/home/hugo/school/IHC/redesign/views/mapa.html",
+		"/home/hugo/school/IHC/redesign/app.js",
+		"/home/hugo/school/IHC/redesign/views/footer.html",
+		"/home/hugo/school/IHC/redesign/LICENSE.txt",
+		"/home/hugo/school/IHC/redesign/views/prealistamento.html",
+		"/home/hugo/school/IHC/redesign/public/scripts/map.js",
+		"/home/hugo/school/IHC/redesign/views/index.html",
+		"/home/hugo/school/IAC/Intel8080-ASM-ex.txt",
+		"/home/hugo/school/IHC/redesign/public/styles/style.styl",
+		"/home/hugo/school/IHC/redesign/views/busca.html",
+		"/home/hugo/.config/sublime-text-2/Packages/SublimeLinter/SublimeLinter.sublime-settings",
+		"/home/hugo/school/IHC/redesign/scraper.py",
+		"/home/hugo/school/IHC/redesign/views/header.html",
+		"/home/hugo/school/IHC/redesign/views/prealistament.html",
+		"/home/hugo/school/IHC/redesign/jsm.sublime-project",
+		"/home/hugo/Dropbox/VoidMS_src/client/messages/commands/Donator.java",
+		"/home/hugo/downloads/compila.c",
+		"/home/hugo/school/IHC/redesign/routes/prealistamento.js",
+		"/home/hugo/school/IHC/redesign/routes/busca.js",
+		"/home/hugo/programming/c/linked-list/main.c",
+		"/home/hugo/programming/python/codejam/2013qualifier/b/test.in",
+		"/home/hugo/programming/c/func-area/main.c",
+		"/home/hugo/downloads/CArray.txt",
+		"/home/hugo/programming/c/func-area/Makefile",
+		"/home/hugo/.config/sublime-text-2/Packages/To HasteBin/Default.sublime-keymap",
+		"/home/hugo/programming/python/codejam/africa-2010/A/store-credit.py",
+		"/home/hugo/programming/python/codejam/africa-2010/B/reverse-words.py",
+		"/home/hugo/programming/projects/site/public/styles/style.styl",
+		"/home/hugo/programming/projects/site/app.js",
+		"/home/hugo/.config/sublime-text-2/Packages/Web Inspector/swi.sublime-settings",
+		"/home/hugo/.config/sublime-text-2/Packages/Web Inspector/Default (Linux).sublime-keymap",
+		"/home/hugo/programming/projects/site/public/styles/style.stylus",
+		"/home/hugo/programming/projects/site/public/styles/style.less",
+		"/home/hugo/programming/projects/site/public/styles/style.css",
+		"/home/hugo/.config/sublime-text-2/Packages/User/swi.sublime-settings",
+		"/home/hugo/programming/projects/site/views/header.html",
+		"/home/hugo/programming/projects/site/routes/compilestylus.js",
+		"/home/hugo/programming/projects/site/routes/index.js",
+		"/home/hugo/programming/projects/site/package.json",
+		"/home/hugo/programming/projects/site/views/footer.html",
+		"/home/hugo/programming/projects/site/views/index.html",
+		"/home/hugo/.config/sublime-text-2/Packages/TidyHTML5/TidyHTML.sublime-settings",
+		"/home/hugo/.gitignore-global",
+		"/home/hugo/programming/projects/site/site.sublime-project",
+		"/home/hugo/programming/web/canvas/index.html",
+		"/home/hugo/programming/web/canvas/canvas.js",
+		"/home/hugo/programming/web/canvas/style.css",
+		"/home/hugo/programming/web/canvas/ie.js",
+		"/home/hugo/.config/sublime-text-2/Packages/User/Preferences.sublime-settings",
+		"/home/hugo/.config/sublime-text-2/Packages/Default/Preferences.sublime-settings",
+		"/home/hugo/.config/sublime-text-2/Packages/View In Browser/View In Browser.sublime-settings",
+		"/home/hugo/.config/sublime-text-2/Packages/User/LiveReload.sublime-settings",
+		"/home/hugo/.config/sublime-text-2/Packages/User/JSON.sublime-settings",
+		"/home/hugo/kbdbacklight",
+		"/home/hugo/.config/sublime-text-2/Packages/Emmet/Emmet.sublime-settings",
+		"/home/hugo/programming/c/lesson1/main.cpp",
+		"/home/hugo/Dropbox/Photos/How to use the Photos folder.rtf",
+		"/home/hugo/programming/go/sqrt.go",
+		"/home/hugo/programming/python/distance_from_zero.py",
+		"/home/hugo/programming/python/shutdown.py",
+		"/home/hugo/programming/clipboard.pl",
+		"/home/hugo/programming/test.html",
+		"/home/hugo/programming/test-style.css",
+		"/home/hugo/.config/sublime-text-2/Packages/Markdown Preview/MarkdownPreview.sublime-settings",
+		"/home/hugo/programming/python/gabriel.py"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": true,
+		"find_history":
+		[
+			"min_edit",
+			"\\\\",
+			"|",
+			".",
+			"script",
+			"map",
+			".",
+			"import",
+			"!warp",
+			"routes",
+			"\"",
+			"    ",
+			"solid",
+			";\n",
+			"routes",
+			"50px",
+			"100px",
+			" i’m ",
+			" i'm ",
+			" i ",
+			"tabFocus",
+			"isGravityOn",
+			"gravity",
+			"isGravityOn",
+			"g",
+			"gravity",
+			"running",
+			" 2;",
+			"%;\n",
+			"xacc",
+			"MPP",
+			"10s",
+			"display",
+			"Test",
+			"</",
+			"snippets",
+			"img",
+			"yacc",
+			"xacc",
+			";",
+			"\"",
+			"this\n\n\nthis",
+			"this"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"",
+			": :",
+			".",
+			"'",
+			" I'm ",
+			"I'm",
+			" I ",
+			"tabFocused",
+			"gravityOn",
+			"isGravityOn",
+			"isRunning",
+			"VEL_INCREMENT",
+			"5s",
+			"opacity",
+			"orange",
+			"yvel",
+			"xvel",
+			"'"
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "src/client/animation.js",
+					"settings":
+					{
+						"buffer_size": 1571,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1352,
+								1414
+							]
+						],
+						"settings":
+						{
+							"BracketHighlighterBusy": false,
+							"annotations":
+							[
+								"TODO",
+								"README",
+								"FIXME"
+							],
+							"bh_regions":
+							[
+								"bh_regex",
+								"bh_regex_center",
+								"bh_regex_open",
+								"bh_regex_close",
+								"bh_double_quote",
+								"bh_double_quote_center",
+								"bh_double_quote_open",
+								"bh_double_quote_close",
+								"bh_square",
+								"bh_square_center",
+								"bh_square_open",
+								"bh_square_close",
+								"bh_angle",
+								"bh_angle_center",
+								"bh_angle_open",
+								"bh_angle_close",
+								"bh_curly",
+								"bh_curly_center",
+								"bh_curly_open",
+								"bh_curly_close",
+								"bh_default",
+								"bh_default_center",
+								"bh_default_open",
+								"bh_default_close",
+								"bh_unmatched",
+								"bh_unmatched_center",
+								"bh_unmatched_open",
+								"bh_unmatched_close",
+								"bh_round",
+								"bh_round_center",
+								"bh_round_open",
+								"bh_round_close",
+								"bh_tag",
+								"bh_tag_center",
+								"bh_tag_open",
+								"bh_tag_close",
+								"bh_single_quote",
+								"bh_single_quote_center",
+								"bh_single_quote_open",
+								"bh_single_quote_close"
+							],
+							"csslint_options":
+							{
+								"adjoining-classes": "warning",
+								"box-model": true,
+								"box-sizing": "warning",
+								"compatible-vendor-prefixes": "warning",
+								"display-property-grouping": true,
+								"duplicate-background-images": "warning",
+								"duplicate-properties": true,
+								"empty-rules": true,
+								"errors": true,
+								"fallback-colors": "warning",
+								"floats": "warning",
+								"font-faces": "warning",
+								"font-sizes": "warning",
+								"gradients": "warning",
+								"ids": "warning",
+								"import": "warning",
+								"important": "warning",
+								"known-properties": true,
+								"outline-none": "warning",
+								"overqualified-elements": "warning",
+								"qualified-headings": "warning",
+								"regex-selectors": "warning",
+								"rules-count": "warning",
+								"shorthand": "warning",
+								"star-property-hack": "warning",
+								"text-indent": "warning",
+								"underscore-property-hack": "warning",
+								"unique-headings": "warning",
+								"universal-selector": "warning",
+								"vendor-prefix": true,
+								"zero-units": "warning"
+							},
+							"gjslint_ignore":
+							[
+								110
+							],
+							"gjslint_options":
+							[
+							],
+							"incomplete_sync": null,
+							"javascript_linter": "jshint",
+							"jshint_options":
+							{
+								"browser": true,
+								"evil": true,
+								"regexdash": true,
+								"sub": true,
+								"trailing": true,
+								"wsh": true
+							},
+							"pep8": true,
+							"pep8_ignore":
+							[
+								"E501"
+							],
+							"perl_linter": "perlcritic",
+							"pyflakes_ignore":
+							[
+							],
+							"pyflakes_ignore_import_*": true,
+							"remote_loading": false,
+							"sublimelinter": true,
+							"sublimelinter_delay": 2,
+							"sublimelinter_disable":
+							[
+							],
+							"sublimelinter_executable_map":
+							{
+							},
+							"sublimelinter_fill_outlines": false,
+							"sublimelinter_gutter_marks": true,
+							"sublimelinter_gutter_marks_theme": "simple",
+							"sublimelinter_mark_style": "none",
+							"sublimelinter_notes": false,
+							"sublimelinter_objj_check_ascii": false,
+							"sublimelinter_popup_errors_on_save": false,
+							"sublimelinter_syntax_map":
+							{
+								"C++": "c",
+								"Python Django": "python",
+								"Ruby on Rails": "ruby"
+							},
+							"sublimelinter_wrap_find": true,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 663.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 127.0
+	},
+	"output.sftp":
+	{
+		"height": 114.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 273.0,
+	"status_bar_visible": true
+}

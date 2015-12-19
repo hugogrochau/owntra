@@ -52,9 +52,8 @@ owntra.Animation.prototype.pause = function() {
  * @return {Boolean} False if already running, true otherwise
  */
 owntra.Animation.prototype.run = function() {
-    if (this.running)
-        return false;// already running
-    this.running = true;
-    return true;
-
+    if (!this.running)
+        return this.running = true;
+    else
+        return false; // already running
 };
